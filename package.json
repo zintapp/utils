@@ -1,6 +1,6 @@
 {
   "name": "@zintapp/utils",
-  "version": "0.1.0",
+  "version": "0.1.0+alpha",
   "description": "A few utilities to simplify the conversion of a React Component into a Zint microfrontend.",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
@@ -13,7 +13,7 @@
   "author": "Zint (Guillaume de Cagny) <hello@zint.app>",
   "license": "MIT",
   "private": false,
-  "dependencies": {
+  "peerDependencies": {
     "buffer": "^6.0.3",
     "rxjs": "^7.5.5"
   }
