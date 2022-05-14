@@ -1,6 +1,6 @@
 {
   "name": "@zintapp/utils",
-  "version": "0.1.0-0.0.1",
+  "version": "0.1.0-0.0.3",
   "description": "A few utilities to simplify the conversion of a React Component into a Zint microfrontend.",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
