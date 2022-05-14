@@ -9,7 +9,7 @@ export function waitForAllData(): OperatorFunction<Buffer, Buffer>
     const reduceToListOfBuffers =
         reduce(
             (acc: Buffer[], chunk: Buffer) => {
-                acc.push(chunk);
+                acc.push(Buffer.from(chunk));
                 return acc;
             }, []);
     
@@ -19,3 +19,6 @@ export function waitForAllData(): OperatorFunction<Buffer, Buffer>
     )
 }
 
+export function decode(encoding: string): OperatorFunction<Buffer, string> {
+    return map((o: Buffer) => o.toString(encoding));
+}
