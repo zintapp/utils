@@ -1,12 +1,13 @@
 {
   "name": "@zintapp/utils",
-  "version": "0.1.0-0.0.3",
+  "version": "0.1.0-0.0.5",
   "description": "A few utilities to simplify the conversion of a React Component into a Zint microfrontend.",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
   "scripts": {
     "build": "tsc",
-    "start": "tsc -w"
+    "start": "tsc -w",
+    "prepack": "rm -rf ./dist && npm run build"
   },
   "files": ["dist"],
   "repository": "https://github.com/zintapp/utils",
